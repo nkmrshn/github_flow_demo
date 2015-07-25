@@ -7,7 +7,8 @@ class MyClassTest < Minitest::Test
   end
 
   def test_odd?
-    skip "test later"
+    assert_equal true,  @my_class.odd?(1)
+    assert_equal false, @my_class.odd?(2)
   end
 
   def test_even?
