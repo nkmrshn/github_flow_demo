@@ -12,6 +12,7 @@ class MyClassTest < Minitest::Test
   end
 
   def test_even?
-    skip "test later"
+    assert_equal false, @my_class.even?(1)
+    assert_equal true,  @my_class.even?(2)
   end
 end
